@@ -1,0 +1,51 @@
+/* Add this to your <head> or CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+
+:root {
+  /* Colors */
+  --bg-main: #0b0e14;
+  --bg-card: #161b22;
+  --bg-accent: #1f242d;
+  
+  --text-primary: #f0f6fc;
+  --text-secondary: #8b949e;
+  --text-muted: #484f58;
+
+  /* Tech Accents */
+  --accent-glow: #58a6ff;
+  --accent-success: #238636;
+  --border-color: #30363d;
+  
+  /* Glassmorphism & Effects */
+  --glass-bg: rgba(22, 27, 34, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glow-shadow: 0 0 15px rgba(88, 166, 255, 0.15);
+
+  /* Typography */
+  --font-main: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* Apply the font to your body or specific elements */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  background-image: 
+    radial-gradient(circle at 2px 2px, var(--border-color) 1px, transparent 0);
+  background-size: 40px 40px; /* Subtle tech grid background */
+}
+
+/* Example: Apply to headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; /* Bold */
+}
+
+a, a:visited {
+    color: var(--accent-success);
+}

@@ -1,0 +1,30 @@
+.nav-blur {
+  position: sticky;
+  top: 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+  z-index: 100;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+
+  display: flex;
+  align-items:center; 
+  justify-content:space-between; 
+  gap:12px;
+
+  margin-bottom: 2rem;
+}
+
+:host { display: block; }
+.brand { font-weight:700; font-family: var(--font-mono, monospace); }
+nav { display:flex; gap:12px; align-items:center; }
+/* Ensure header links use the accent success color (don't inherit muted host color) */
+::slotted(a), ::slotted(a:visited) { color: var(--accent-success); text-decoration: none; }
+::slotted(a:hover) { color: var(--accent-glow); text-decoration: underline; }
+/* Active link style */
+::slotted(a.active) { font-weight: 700; text-decoration: underline; }
+
+/* Visible focus for keyboard users */
+::slotted(a:focus) { outline: 2px solid var(--accent-glow); outline-offset: 3px; border-radius: 4px; }
