@@ -21,10 +21,23 @@
 .brand { font-weight:700; font-family: var(--font-mono, monospace); }
 nav { display:flex; gap:12px; align-items:center; }
 /* Ensure header links use the accent success color (don't inherit muted host color) */
-::slotted(a), ::slotted(a:visited) { color: var(--accent-success); text-decoration: none; }
-::slotted(a:hover) { color: var(--accent-glow); text-decoration: underline; }
-/* Active link style */
-::slotted(a.active) { font-weight: 700; text-decoration: underline; }
-
-/* Visible focus for keyboard users */
-::slotted(a:focus) { outline: 2px solid var(--accent-glow); outline-offset: 3px; border-radius: 4px; }
+::slotted(a), ::slotted(a:visited) { 
+  color: var(--accent-success); 
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+::slotted(a:hover) { 
+  color: var(--accent-glow); 
+  text-decoration: underline;
+}
+::slotted(a.active) { 
+  font-weight: 700; 
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+::slotted(a:focus) {
+  outline: 2px solid var(--accent-glow);
+  outline-offset: 3px;
+  border-radius: 4px;
+  transition: outline-color 0.3s ease, outline-offset 0.3s ease;
+}

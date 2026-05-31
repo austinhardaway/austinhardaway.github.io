@@ -32,12 +32,12 @@ class HomePage extends HTMLElement {
           
           <ul style="margin:0 0 .75rem 0; padding-left:1.25rem">
             <li>Currently leading a team of developers to build business critical tools at AT&T</li>
-            <li>Love tinkering with AI for the Home! Ask me how my hermes agent are going!</li>
+            <li>Love tinkering with AI for the Home! Ask me what my hermes agent is up to!</li>
             <li>When I'm not coding, you can find me playing golf our hanging out with my wife and dog!</li>
           </ul>
           <div style="margin-top:12px">
             <app-button href="mailto:austinhardaway@gmail.com">Contact</app-button>
-            <app-button href="/assets/Austin-Hardaway-2026-general.pdf" download style="margin-left:8px">View Resume</app-button>
+            <app-button href="/assets/Austin-Hardaway-2026-general.pdf" download style="margin-left:8px">View My Resume</app-button>
           </div>
         </site-card>
         <site-card style="margin-top:16px; background:"rgba(252, 210, 23, .8)">
